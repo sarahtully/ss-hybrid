@@ -1,0 +1,22 @@
+{
+    "APP_NAME": "ss-hybrid",
+
+    "TAB1_TITLE": "Locations",
+    "TAB2_TITLE": "About",
+    "TAB3_TITLE": "Contact",
+
+    "TUTORIAL_SLIDE_CONTINUE": "Continue",
+    "TUTORIAL_SLIDE_READY": "Ready?",
+
+    "TUTORIAL_SLIDE1_TITLE": "Slide 1",
+    "TUTORIAL_SLIDE1_DESCRIPTION": "TODO: Add Content",
+
+    "TUTORIAL_SLIDE2_TITLE": "Slide 2",
+    "TUTORIAL_SLIDE2_DESCRIPTION": "TODO: Add Content",
+
+    "TUTORIAL_SLIDE3_TITLE": "Slide 3",
+    "TUTORIAL_SLIDE3_DESCRIPTION": "TODO: Add Content",
+
+    "LOCATIONS_TITLE": "Locations"
+
+}
