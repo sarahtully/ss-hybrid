@@ -5,7 +5,7 @@ import { StatusBar, Splashscreen } from 'ionic-native';
 import { AboutPage } from '../pages/about/about';
 import { ContactPage } from '../pages/contact/contact';
 import { FirstRunPage } from '../pages/pages';
-import { LocationsPage } from '../pages/locations/locations';
+import { LocationListPage } from '../pages/location-list/location-list';
 import { SettingsPage } from '../pages/settings/settings';
 import { TabsPage } from '../pages/tabs/tabs';
 import { TutorialPage } from '../pages/tutorial/tutorial';
@@ -24,7 +24,7 @@ export class MyApp {
     { title: 'Tutorial', component: TutorialPage },
     { title: 'Tabs', component: TabsPage },
     { title: 'About', component: AboutPage },
-    { title: 'Locations', component: LocationsPage },
+    { title: 'Locations', component: LocationListPage },
     { title: 'Contact', component: ContactPage },
     { title: 'Settings', component: SettingsPage }
   ]

@@ -1,7 +1,7 @@
 import { TabsPage } from './tabs/tabs';
 import { AboutPage } from '../pages/about/about';
 import { ContactPage } from '../pages/contact/contact';
-import { LocationsPage } from '../pages/locations/locations';
+import { LocationListPage } from '../pages/location-list/location-list';
 import { TutorialPage } from './tutorial/tutorial';
 
 // The page the user lands on after opening the app and without a session
@@ -14,6 +14,6 @@ export const FirstRunPage = TabsPage;
 export const MainPage = TabsPage;
 
 // The initial root pages for our tabs (remove if not using tabs)
-export const Tab1Root = LocationsPage;
+export const Tab1Root = LocationListPage;
 export const Tab2Root = AboutPage;
 export const Tab3Root = ContactPage;

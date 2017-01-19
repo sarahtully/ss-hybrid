@@ -17,6 +17,10 @@
     "TUTORIAL_SLIDE3_TITLE": "Slide 3",
     "TUTORIAL_SLIDE3_DESCRIPTION": "TODO: Add Content",
 
-    "LOCATIONS_TITLE": "Locations"
-
+    "LOCATION_CREATE_TITLE": "New Location",
+    "LOCATION_CREATE_CHOOSE_IMAGE": "Add Image",
+    "LOCATION_DETAIL_REVIEW_HEADER": "Reviews",
+    "LOCATION_DETAIL_REVIEW_TOTAL": "Total Reviews",
+    "LOCATION_LIST_TITLE": "Locations",
+    "LOCATION_LIST_ADD": "Add"
 }

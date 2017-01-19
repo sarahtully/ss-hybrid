@@ -1,0 +1,29 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>{{ location.name }}</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+  <div class="location-profile" text-center #profilePic [style.background-image]="'url(' + location.profilePic + ')'">
+  </div>
+
+  <div class="location-detail" padding>
+    <h2>{{location.name}}</h2>
+    <p>{{location.address}}</p>
+
+    <ion-list>
+      <ion-list-header>
+        {{'LOCATION_DETAIL_REVIEW_HEADER' | translate}}
+        <ion-note item-right>{{location.reviews.length + " " + ('LOCATION_DETAIL_REVIEW_TOTAL' | translate)}}</ion-note>
+      </ion-list-header>
+      <ion-item *ngFor="let review of location.reviews">
+        <h3>{{review.name}}</h3>
+        <p>{{review.description}}</p>
+      </ion-item>
+    </ion-list>
+  </div>
+</ion-content>

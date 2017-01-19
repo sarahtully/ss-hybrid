@@ -6,15 +6,18 @@ import { Storage } from '@ionic/storage';
 import { MyApp } from './app.component';
 import { AboutPage } from '../pages/about/about';
 import { ContactPage } from '../pages/contact/contact';
-import { LocationsPage } from '../pages/locations/locations';
+import { LocationCreatePage } from '../pages/location-create/location-create';
+import { LocationDetailPage } from '../pages/location-detail/location-detail';
+import { LocationListPage } from '../pages/location-list/location-list';
 import { SettingsPage } from '../pages/settings/settings';
 import { TabsPage } from '../pages/tabs/tabs';
 import { TutorialPage } from '../pages/tutorial/tutorial';
 
 import { Api } from '../providers/api';
-import { Items } from '../providers/items';
 import { User } from '../providers/user';
 import { Settings } from '../providers/settings';
+
+import { Locations } from '../mocks/providers/locations';
 
 import { TranslateModule, TranslateLoader, TranslateStaticLoader } from 'ng2-translate/ng2-translate';
 
@@ -48,7 +51,9 @@ let pages = [
   MyApp,
   AboutPage,
   ContactPage,
-  LocationsPage,
+  LocationCreatePage,
+  LocationDetailPage,
+  LocationListPage,
   SettingsPage,
   TabsPage,
   TutorialPage,
@@ -68,7 +73,7 @@ export function providers() {
 
     // User,
     Api,
-    Items,
+    Locations,
 
     { provide: Settings, useFactory: provideSettings, deps: [ Storage ] },
     // Keep this to enable Ionic's runtime error handling during development

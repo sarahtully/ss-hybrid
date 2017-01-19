@@ -1,0 +1,38 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>{{ 'LOCATION_LIST_TITLE' | translate }}</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-left (click)="addLocation()" color="primary">
+        <ion-icon name="md-add"></ion-icon>
+        {{ 'LOCATION_LIST_ADD' | translate }}
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+  <ion-list>
+    <ion-item-sliding *ngFor="let location of currentLocations">
+      <button ion-item (click)="openLocation(location)">
+        <ion-avatar item-left>
+          <img [src]="location.profilePic" />
+        </ion-avatar>
+        <h2>{{location.name}}</h2>
+        <p>
+          <ion-icon name="pin"></ion-icon>
+          {{location.address}}
+        </p>
+        <ion-badge item-right *ngIf="location.reviews" color="primary">{{location.reviews.length}}</ion-badge>
+      </button>
+
+      <ion-item-options>
+        <button ion-button color="danger" (click)="deleteLocation(location)">
+          Delete
+        </button>
+      </ion-item-options>
+    </ion-item-sliding>
+  </ion-list>
+</ion-content>
